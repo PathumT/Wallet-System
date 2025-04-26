@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Withdrawal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>Create Withdrawal</header>
+
+  <div class="form-container">
+    <select id="withdrawUserId">
+      <option value="">Select User</option>
+    </select>
+
+    <input type="number" id="withdrawAmount" placeholder="Amount">
+
+    <button onclick="makeWithdrawal()">Create</button>
+
+    <div id="withdrawResult"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    loadUsers('withdrawUserId');
+  </script>
+</body>
+</html>
