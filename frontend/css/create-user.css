@@ -1,0 +1,56 @@
+header {
+    background: linear-gradient(135deg, #0575E6, #021B79);
+  }
+  
+  .form-container {
+    max-width: 550px;
+  }
+  
+  .form-container::before {
+    background: linear-gradient(90deg, #0575E6, #021B79);
+  }
+  
+  .form-title {
+    color: #0575E6;
+  }
+  
+  .form-title i {
+    background: rgba(5, 117, 230, 0.08);
+    color: #0575E6;
+    border-color: rgba(5, 117, 230, 0.15);
+  }
+  
+  .input-group i {
+    color: #0575E6;
+  }
+  
+  .form-container input:focus {
+    border-color: #0575E6;
+    box-shadow: 0 0 0 3px rgba(5, 117, 230, 0.15);
+  }
+  
+  .form-container button {
+    background: linear-gradient(90deg, #0575E6, #021B79);
+    box-shadow: 0 5px 15px rgba(5, 117, 230, 0.3);
+  }
+  
+  .form-container button:hover {
+    background: linear-gradient(90deg, #0467cc, #01155e);
+    box-shadow: 0 8px 20px rgba(5, 117, 230, 0.4);
+  }
+  
+  #userResult {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+
+  }
+  
+  .back-link a {
+    color: #0575E6;
+  }
+  
+  .back-link a:hover {
+    color: #021B79;
+  }

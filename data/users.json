@@ -9,14 +9,6 @@
         "email": "pathumthennakoon6@gmail.com",
         "password": "$2y$10$QhBr48h\/.2H48qyU7sPHqO2cBc6aNae6ix0JNLC0DsPOaNo2YClua",
         "dob": "2025-03-04",
-        "balance": 140
-    },
-    {
-        "user_id": "user_680d4b6cdb9cf",
-        "name": "John Doe",
-        "email": "john.doe@example.com",
-        "password": "$2y$10$oXejWBHELklfRGbXqQ7Wgu06.qyCN4RPM\/UxA7ypEANyGKRH0UqfC",
-        "dob": "1995-05-05",
-        "balance": 0
+        "balance": 136
     }
 ]

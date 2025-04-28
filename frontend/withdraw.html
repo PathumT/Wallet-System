@@ -2,23 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Create Withdrawal</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Create Withdrawal | Wallet System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/withdraw.css">
 </head>
 <body>
-  <header>Create Withdrawal</header>
+  <header>
+    <div class="header-content">
+      <i class="fas fa-arrow-up header-icon"></i>
+      Create Withdrawal
+    </div>
+  </header>
 
   <div class="form-container">
-    <select id="withdrawUserId">
-      <option value="">Select User</option>
-    </select>
-
-    <input type="number" id="withdrawAmount" placeholder="Amount">
-
-    <button onclick="makeWithdrawal()">Create</button>
-
+    <div class="form-title">
+      <i class="fas fa-money-bill-wave"></i>
+      Withdraw Funds
+    </div>
+    
+    <div class="input-group">
+      <label for="withdrawUserId">Select Account</label>
+      <i class="fas fa-user"></i>
+      <select id="withdrawUserId">
+        <option value="">Select User</option>
+      </select>
+    </div>
+    
+    <div class="input-group">
+      <label for="withdrawAmount">Amount</label>
+      <i class="fas fa-dollar-sign"></i>
+      <input type="number" id="withdrawAmount" placeholder="Enter withdrawal amount">
+    </div>
+    
+    <button onclick="makeWithdrawal()">Withdraw Funds <i class="fas fa-chevron-right"></i></button>
+    
     <div id="withdrawResult"></div>
+    
+    <div class="back-link">
+      <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
   </div>
+
+  <footer>
+    © 2025 Wallet System - Secure Financial Management
+  </footer>
 
   <script src="script.js"></script>
   <script>

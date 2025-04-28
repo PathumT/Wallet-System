@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #f8f9fa, #e9ecef);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    z-index: 0;
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-icon {
+    margin-right: 15px;
+    font-size: 28px;
+  }
+  
+  .form-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 35px 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+  }
+  
+  .form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+  }
+  
+  .form-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-title i {
+    margin-right: 12px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+  }
+  
+  .input-group {
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+    font-size: 15px;
+  }
+  
+  .input-group i {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    font-size: 18px;
+  }
+  
+  .form-container input,
+  .form-container select {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  .form-container input:focus,
+  .form-container select:focus {
+    box-shadow: 0 0 0 3px;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  .form-container input::placeholder,
+  .form-container select::placeholder {
+    color: #aaa;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-container button i {
+    margin-left: 10px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .form-container button:hover i {
+    transform: translateX(3px);
+  }
+  
+  .result-message {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    
+  }
+  
+  .success {
+    background-color: rgba(46, 204, 113, 0.15);
+    color: #27ae60;
+    border: 1px solid rgba(46, 204, 113, 0.3);
+    display: block !important;
+  }
+  
+  .error {
+    background-color: rgba(231, 76, 60, 0.15);
+    color: #e74c3c;
+    border: 1px solid rgba(231, 76, 60, 0.3);
+    display: block !important;
+  }
+  
+  .back-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+  }
+  
+  .back-link a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .back-link a i {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(to right, #f0f2f5, #e5e8ed, #f0f2f5);
+    color: #666;
+    font-size: 15px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    margin-top: auto;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    .form-container {
+      padding: 25px 20px;
+      margin: 25px 15px;
+    }
+    
+    header {
+      padding: 25px 15px;
+      font-size: 24px;
+    }
+    
+    .header-icon {
+      font-size: 24px;
+    }
+  }

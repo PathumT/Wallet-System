@@ -2,23 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Create Deposit</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Create Deposit | Wallet System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/deposit.css">
 </head>
 <body>
-  <header>Create Deposit</header>
+  <header>
+    <div class="header-content">
+      <i class="fas fa-arrow-down header-icon"></i>
+      Create Deposit
+    </div>
+  </header>
 
   <div class="form-container">
-    <select id="depositUserId">
-      <option value="">Select User</option>
-    </select>
-
-    <input type="number" id="depositAmount" placeholder="Amount">
-
-    <button onclick="makeDeposit()">Create</button>
-
+    <div class="form-title">
+      <i class="fas fa-money-bill-wave"></i>
+      Add Funds
+    </div>
+    
+    <div class="input-group">
+      <label for="depositUserId">Select User</label>
+      <i class="fas fa-user"></i>
+      <select id="depositUserId">
+        <option value="">Select User</option>
+      </select>
+    </div>
+    
+    <div class="input-group">
+      <label for="depositAmount">Deposit Amount</label>
+      <i class="fas fa-dollar-sign"></i>
+      <input type="number" id="depositAmount" placeholder="Amount">
+    </div>
+    
+    <button onclick="makeDeposit()">Create <i class="fas fa-chevron-right"></i></button>
+    
     <div id="depositResult"></div>
+    
+    <div class="back-link">
+      <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
   </div>
+
+  <footer>
+    © 2025 Wallet System - Secure Financial Management
+  </footer>
 
   <script src="script.js"></script>
   <script>

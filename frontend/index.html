@@ -3,36 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <title>Wallet System</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <header>WALLET SYSTEM</header>
+  <header>
+    <div class="logo-container">
+      <div class="logo-icon"><i class="fas fa-wallet"></i></div>
+      <div class="logo-text">WALLET SYSTEM</div>
+    </div>
+    <div class="subtitle">Your digital finance management solution</div>
+  </header>
 
   <div class="container">
     <div class="card" onclick="location.href='create-user.html'">
+      <div class="card-icon-wrapper">
+        <div class="card-icon"><i class="fas fa-user-plus"></i></div>
+      </div>
       <h3>Create User</h3>
-      
+      <p>Set up a new account to start managing your finances securely and effortlessly</p>
+      <div class="card-button" onclick="location.href='create-user.html'">Get Started <i class="fas fa-chevron-right"></i></div>
     </div>
 
     <div class="card" onclick="location.href='deposit.html'">
+      <div class="card-icon-wrapper">
+        <div class="card-icon"><i class="fas fa-arrow-down"></i></div>
+      </div>
       <h3>Create Deposit</h3>
-      
+      <p>Add funds to your account securely with instant confirmation and tracking</p>
+      <div class="card-button" onclick="location.href='deposit.html'">Deposit Now <i class="fas fa-chevron-right"></i></div>
     </div>
 
     <div class="card" onclick="location.href='withdraw.html'">
+      <div class="card-icon-wrapper">
+        <div class="card-icon"><i class="fas fa-arrow-up"></i></div>
+      </div>
       <h3>Create Withdrawal</h3>
-      
+      <p>Withdraw money from your account quickly and securely whenever needed</p>
+      <div class="card-button" onclick="location.href='withdraw.html'">Withdraw <i class="fas fa-chevron-right"></i></div>
     </div>
 
     <div class="card" onclick="location.href='balance.html'">
+      <div class="card-icon-wrapper">
+        <div class="card-icon"><i class="fas fa-coins"></i></div>
+      </div>
       <h3>Check Balance</h3>
-      
-    </div>
-
-    <div class="card" onclick="location.href='transactions.html'">
-      <h3>View Transactions</h3>
-      
+      <p>View your current account balance, transaction history and financial status</p>
+      <div class="card-button" onclick="location.href='balance.html'">View Balance <i class="fas fa-chevron-right"></i></div>
     </div>
   </div>
+
+  <footer>
+    © 2025 Wallet System - Secure Financial Management
+  </footer>
 </body>
 </html>

@@ -1,0 +1,57 @@
+header {
+    background: linear-gradient(135deg, #27ae60, #1e8449);
+  }
+  
+  .form-container {
+    max-width: 550px;
+  }
+  
+  .form-container::before {
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+  }
+  
+  .form-title {
+    color: #27ae60;
+  }
+  
+  .form-title i {
+    background: rgba(46, 204, 113, 0.08);
+    color: #27ae60;
+    border-color: rgba(46, 204, 113, 0.15);
+  }
+  
+  .input-group i {
+    color: #27ae60;
+  }
+  
+  .form-container input:focus,
+  .form-container select:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.15);
+  }
+  
+  .form-container button {
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+  }
+  
+  .form-container button:hover {
+    background: linear-gradient(90deg, #219955, #25a65a);
+    box-shadow: 0 8px 20px rgba(46, 204, 113, 0.4);
+  }
+  
+  #depositResult {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    
+  }
+  
+  .back-link a {
+    color: #27ae60;
+  }
+  
+  .back-link a:hover {
+    color: #219955;
+  }
