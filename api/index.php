@@ -1,5 +1,5 @@
 <?php
-require '../utils.php'; // Move one directory up
+require '../utils.php';
 
 header('Content-Type: application/json');
 
@@ -12,7 +12,6 @@ if (!$path) {
     exit;
 }
 
-// Remove extra slashes if needed
 $path = trim($path, '/');
 
 switch ($path) {

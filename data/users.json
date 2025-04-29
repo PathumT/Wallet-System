@@ -1,14 +1,10 @@
 [
     {
-        "user_id": "user1",
-        "balance": 1000
-    },
-    {
         "user_id": "user_680d3696f1e69",
         "name": "pathum",
         "email": "pathumthennakoon6@gmail.com",
         "password": "$2y$10$QhBr48h\/.2H48qyU7sPHqO2cBc6aNae6ix0JNLC0DsPOaNo2YClua",
         "dob": "2025-03-04",
-        "balance": 136
+        "balance": 850
     }
 ]

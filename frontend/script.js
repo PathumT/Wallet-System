@@ -8,6 +8,8 @@ async function createUser() {
   const password = document.getElementById('password').value.trim();
   const dob = document.getElementById('dob').value.trim();
   const resultDiv = document.getElementById('userResult');
+  console.log(resultDiv);
+  
 
   if (!name || !email || !password || !dob) {
     resultDiv.style.color = 'red';
@@ -23,8 +25,12 @@ async function createUser() {
     });
 
     const data = await res.json();
+    console.log(data);
+    
 
     if (res.ok) {
+      console.log('sssssssssssssssss');
+      
       resultDiv.style.color = 'green';
       resultDiv.innerText = data.message || 'User created successfully!';
       document.getElementById('name').value = '';
@@ -32,10 +38,14 @@ async function createUser() {
       document.getElementById('password').value = '';
       document.getElementById('dob').value = '';
     } else {
+      console.log('aaaaaaaaaaa');
+      
       resultDiv.style.color = 'red';
       resultDiv.innerText = data.error || 'Something went wrong';
     }
   } catch (error) {
+    console.log('vvvvvvvvvvv');
+    
     resultDiv.style.color = 'red';
     resultDiv.innerText = error.message || 'Server error';
   }

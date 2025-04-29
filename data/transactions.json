@@ -1,56 +1,32 @@
 [
     {
         "user_id": "user_680d3696f1e69",
-        "type": "withdraw",
-        "amount": 10,
-        "timestamp": "2025-04-26 21:04:50"
-    },
-    {
-        "user_id": "user_680d4b6cdb9cf",
         "type": "deposit",
-        "amount": 19,
-        "timestamp": "2025-04-27 16:01:09"
-    },
-    {
-        "user_id": "user_680d4b6cdb9cf",
-        "type": "deposit",
-        "amount": 19,
-        "timestamp": "2025-04-27 16:01:33"
-    },
-    {
-        "user_id": "user_680d4b6cdb9cf",
-        "type": "deposit",
-        "amount": 4,
-        "timestamp": "2025-04-27 16:05:05"
-    },
-    {
-        "user_id": "user_680d4b6cdb9cf",
-        "type": "withdraw",
-        "amount": 23,
-        "timestamp": "2025-04-27 16:09:09"
-    },
-    {
-        "user_id": "user_680e50ae70ef9",
-        "type": "deposit",
-        "amount": 3,
-        "timestamp": "2025-04-27 17:15:19"
+        "amount": 1000,
+        "timestamp": "2025-04-29 09:11:07"
     },
     {
         "user_id": "user_680d3696f1e69",
         "type": "withdraw",
-        "amount": 4,
-        "timestamp": "2025-04-27 17:15:29"
+        "amount": 100,
+        "timestamp": "2025-04-29 09:11:24"
     },
     {
-        "user_id": "user_680e60d185584",
-        "type": "deposit",
-        "amount": 4,
-        "timestamp": "2025-04-27 17:19:07"
-    },
-    {
-        "user_id": "user_680d4b6cdb9cf",
+        "user_id": "user_680d3696f1e69",
         "type": "withdraw",
-        "amount": 3,
-        "timestamp": "2025-04-27 17:21:55"
+        "amount": 200,
+        "timestamp": "2025-04-29 09:11:29"
+    },
+    {
+        "user_id": "user_680d3696f1e69",
+        "type": "withdraw",
+        "amount": 150,
+        "timestamp": "2025-04-29 09:11:33"
+    },
+    {
+        "user_id": "user_680d3696f1e69",
+        "type": "deposit",
+        "amount": 300,
+        "timestamp": "2025-04-29 09:11:40"
     }
 ]

@@ -1,7 +1,9 @@
 <?php
 function createUser() {
-    $data = getRequestData();
+    header('Content-Type: application/json');
+    error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING); // Suppress notices/warnings
 
+    $data = getRequestData();
     $name = trim($data['name'] ?? '');
     $email = trim($data['email'] ?? '');
     $password = trim($data['password'] ?? '');
@@ -21,7 +23,6 @@ function createUser() {
 
     $dobDate = strtotime($dob);
     $today = strtotime(date('Y-m-d'));
-
     if ($dobDate === false || $dobDate >= $today) {
         http_response_code(400);
         echo json_encode(['error' => 'Invalid date of birth. DOB cannot be today or future.']);
@@ -29,7 +30,6 @@ function createUser() {
     }
 
     $users = readData('data/users.json');
-
     foreach ($users as $user) {
         if ($user['email'] === $email) {
             http_response_code(409);
@@ -52,4 +52,5 @@ function createUser() {
 
     echo json_encode(['message' => 'User created successfully!']);
 }
+
 ?>
